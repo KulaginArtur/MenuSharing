@@ -28,7 +28,7 @@
                         <a href="https://www.google.fi/">Linkki 3</a>
                     </div>
                 </div>
-                <a href="" class="linkki">Jotain 3</a>
+                <a href="upload.html" class="linkki">Upload</a>
             </div>
         </div>
     </nav>
@@ -38,15 +38,20 @@
 </header>
 <div class="main">
     <div class="uploadform">
-        <form action="">
-            <br><h6>Restaurants Name:</h6>
-            <input type="text" name="name">
-            <br><br><h6>Description:</h6>
-            <input type="text" name="description">
-            <br><br><h6>Review:</h6>
-            <input type="text" name="review">
-            <br>
-            <input type="submit">
+        <form>
+            <fieldset>
+                <legend><span class="number">1</span> Review</legend>
+                <input type="text" name="field1" placeholder="Name">
+                <input type="text" name="field2" placeholder="Description">
+                <textarea name="field3" placeholder="Review"></textarea>
+
+            </fieldset>
+            <fieldset>
+                <legend><span class="number">2</span> Photo upload</legend>
+                <input type="file" name="photo" id="file" accept="image/*" class="inputfile">
+                <label for="file" class="uploadbutton">Add</label>
+            </fieldset>
+            <input type="submit" value="Upload"/>
         </form>
     </div>
 </div>
