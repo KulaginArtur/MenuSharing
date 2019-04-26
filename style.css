@@ -211,9 +211,42 @@ nav {
     display: block;
 }
 
-/*SisÃ¤ltÃ¶*/
+/*Sisältö*/
 
 .main {
     width: 80%;
     margin: auto;
+}
+
+.searchbar{
+    border: black solid 1px;
+    width: 70%;
+    margin: auto;
+    height: 5rem;
+    margin-top: 2rem;
+}
+
+.container{
+    border: black solid 1px;
+    margin: auto;
+    height: 30rem;
+    margin-top: 30px;
+}
+
+.pic {
+    border: black solid 1px;
+    height: 90%;
+    width: 20%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+input[type=submit] {
+    background-color: royalblue;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }
