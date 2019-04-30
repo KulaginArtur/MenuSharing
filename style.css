@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    /*font: 15px/1.5 Arial, Helvetica, sans-serif;*/
 }
 
 a {
@@ -393,14 +393,13 @@ nav {
 
     display: block;
     border-radius: 50%;
-    height: 15rem;
-    width: 15rem;
+    height: 20rem;
+    width: 20rem;
     padding: 20px;
     margin: auto;
 }
 
 .pInfo {
-    border: solid black 1px;
     color: #FFFFFF;
 }
 
