@@ -233,33 +233,50 @@ nav {
 }
 #retrts{
     width: 100%;
+    position: relative;
 }
 .restcontainer {
-    border-bottom: lightgray solid 1px;
-    margin: auto;
-    margin-top: 30px;
-    display: f;
+    display: block;
+    height: 15rem;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 20px;
 }
 
 .restcontainer img{
-    margin: 10px;
     height: 15rem;
+    width: 15rem;
     display: inline-block;
+    position: absolute;
 }
 
 .restcontainer .review{
-    width: 40%;
-    display: inline-block;
-    margin-right: 0;
+    position: absolute;
+    left: 250px;
+    right: 0;
+    top: 0px;
+    bottom: 20px;
+    margin: 0 12px;
+    display: block;
+    overflow: hidden;
 }
 .restcontainer .nameof{
     margin: 20px;
+    display: block;
 }
 .restcontainer .text{
     margin: 10px;
+    display: block;
 }
 .restcontainer .info{
-    display: inline-block;
+    position: absolute;
+    left: 250px;
+    right: 0;
+    top: 170px;
+    height: 70px;
+    margin: 0 12px;
+    display: flex;
+    overflow: hidden;
+
 }
 .info img {
     width: 17rem;

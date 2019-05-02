@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7828afb9-879a-487e-9e96-210c97bb1c35" name="Default Changelist" comment="commit">
+    <list default="true" id="7828afb9-879a-487e-9e96-210c97bb1c35" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -35,8 +34,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="759">
-                  <caret line="252" column="19" selection-start-line="252" selection-start-column="19" selection-end-line="252" selection-end-column="19" />
+                <state relative-caret-position="1039">
+                  <caret line="274" column="14" selection-start-line="274" selection-start-column="14" selection-end-line="274" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -82,10 +81,10 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1033" />
+    <option name="x" value="850" />
     <option name="y" value="23" />
-    <option name="width" value="1457" />
-    <option name="height" value="1575" />
+    <option name="width" value="1710" />
+    <option name="height" value="1577" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -148,7 +147,7 @@
       <workItem from="1556259568283" duration="6864000" />
       <workItem from="1556605181578" duration="7039000" />
       <workItem from="1556777532198" duration="64000" />
-      <workItem from="1556789722616" duration="4148000" />
+      <workItem from="1556789722616" duration="7355000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1556100908534</created>
@@ -213,14 +212,28 @@
       <option name="project" value="LOCAL" />
       <updated>1556614882004</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit">
+      <created>1556794546577</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1556794546577</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commit">
+      <created>1556823843158</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1556823843158</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29995000" />
+    <option name="totallyTimeSpent" value="33202000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1033" y="23" width="1457" height="1575" extended-state="0" />
+    <frame x="850" y="23" width="1710" height="1577" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.09915716" />
@@ -235,7 +248,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2596089" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.05925926" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.32941177" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -298,8 +311,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="252" column="19" selection-start-line="252" selection-start-column="19" selection-end-line="252" selection-end-column="19" />
+        <state relative-caret-position="1039">
+          <caret line="274" column="14" selection-start-line="274" selection-start-column="14" selection-end-line="274" selection-end-column="14" />
         </state>
       </provider>
     </entry>
