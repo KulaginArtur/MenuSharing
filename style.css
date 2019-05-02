@@ -231,21 +231,42 @@ nav {
     height: 5rem;
     margin-top: 2rem;
 }
-
-.container {
-    border: black solid 1px;
+#retrts{
+    width: 100%;
+}
+.restcontainer {
+    border-bottom: lightgray solid 1px;
     margin: auto;
-    height: 30rem;
     margin-top: 30px;
+    display: f;
 }
 
-.pic {
-    border: black solid 1px;
-    height: 90%;
-    width: 20%;
-    margin-top: 1rem;
-    margin-left: 1rem;
+.restcontainer img{
+    margin: 10px;
+    height: 15rem;
+    display: inline-block;
 }
+
+.restcontainer .review{
+    width: 40%;
+    display: inline-block;
+    margin-right: 0;
+}
+.restcontainer .nameof{
+    margin: 20px;
+}
+.restcontainer .text{
+    margin: 10px;
+
+}
+.restcontainer .info{
+    display: inline-block;
+}
+.info img {
+    width: 17rem;
+    height: 5rem;
+}
+
 
 .uploadform {
     max-width: 500px;
@@ -408,4 +429,5 @@ nav {
     background-color: white;
     padding: 20px;
 }
+
 
