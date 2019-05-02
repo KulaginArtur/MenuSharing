@@ -257,7 +257,7 @@ nav {
 }
 .restcontainer .text{
     margin: 10px;
-
+    padding: 10px;
 }
 .restcontainer .info{
     display: inline-block;
