@@ -185,7 +185,7 @@ nav {
 }
 
 
-.uploadform {
+#uploadform {
     max-width: 500px;
     padding: 10px 20px;
     background: #f4f7f8;
@@ -196,24 +196,24 @@ nav {
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.uploadform fieldset {
+#uploadform fieldset {
     border: none;
 }
 
-.uploadform legend {
+#uploadform legend {
     font-size: 1.4em;
     margin-bottom: 10px;
 }
 
-.uploadform label {
+#uploadform label {
     display: block;
     margin-bottom: 8px;
 }
 
-.uploadform input[type="text"],
-.uploadform input[type="number"],
-.uploadform textarea,
-.uploadform select {
+#uploadform input[type="text"],
+#uploadform input[type="number"],
+#uploadform textarea,
+#uploadform select {
     font-family: Georgia, "Times New Roman", Times, serif;
     background: rgba(255, 255, 255, .1);
     border: none;
@@ -233,19 +233,19 @@ nav {
     margin-bottom: 30px;
 }
 
-.uploadform input[type="text"]:focus,
-.uploadform input[type="number"]:focus,
-.uploadform textarea:focus,
-.uploadform select:focus {
+#uploadform input[type="text"]:focus,
+#uploadform input[type="number"]:focus,
+#uploadform textarea:focus,
+#uploadform select:focus {
     background: #d2d9dd;
 }
 
-.uploadform select {
+#uploadform select {
     -webkit-appearance: menulist-button;
     height: 35px;
 }
 
-.uploadform .number {
+#uploadform .number {
     background: #1abc9c;
     color: #fff;
     height: 30px;
@@ -259,7 +259,7 @@ nav {
     border-radius: 15px 15px 15px 0px;
 }
 
-.uploadform input[type="submit"] {
+#uploadform input[type="submit"] {
     position: relative;
     display: block;
     padding: 19px 39px 18px 39px;
@@ -275,7 +275,7 @@ nav {
     border-radius: 5px;
 }
 
-.uploadform input[type="submit"]:hover {
+#uploadform input[type="submit"]:hover {
     background: #109177;
 }
 

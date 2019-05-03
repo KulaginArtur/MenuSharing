@@ -12,3 +12,12 @@ window.onclick = (e) => {
     }
   }
 };
+
+function fun() {
+  const x = document.getElementById("uploadform");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  };
+};
