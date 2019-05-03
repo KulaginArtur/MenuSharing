@@ -186,6 +186,7 @@ nav {
 
 
 #uploadform {
+    display: none;
     max-width: 500px;
     padding: 10px 20px;
     background: #f4f7f8;
@@ -194,6 +195,7 @@ nav {
     background: #f4f7f8;
     border-radius: 8px;
     font-family: Georgia, "Times New Roman", Times, serif;
+
 }
 
 #uploadform fieldset {
@@ -706,3 +708,4 @@ nav {
 
 }
 /*Katja -Restaurant Page*/
+
