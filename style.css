@@ -37,10 +37,14 @@ header {
 #logo {
     flex-basis: 10%;
 }
+#logo a {
+    margin: auto;
+}
 
 #logo img {
     height: 50px;
 }
+
 
 nav {
     flex-basis: 50%;
