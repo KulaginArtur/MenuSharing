@@ -13,15 +13,13 @@ window.onclick = (e) => {
   }
 };
 
-function fun() {
-  const x = document.getElementById("uploadform");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  };
-};
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
 
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
 
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
