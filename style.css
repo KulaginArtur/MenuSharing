@@ -415,7 +415,8 @@ nav {
 
     }
 
-    .restcontainer .info {
+    .restcontainer .info
+    .restcontainer .revrating{
         height: auto;
         font-size: 60%;
     }
@@ -428,7 +429,8 @@ nav {
         margin-left: 5px;
     }
 
-    .restcontainer .info img {
+    .restcontainer .info img,
+    .restcontainer .revrating img{
         width: 8rem;
         height: 2rem;
         display: block;
