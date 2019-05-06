@@ -448,24 +448,26 @@ nav {
 }
 
 .restaurant-info{
-    float: left;
-    /*    border: gray solid 0.5px;*/
+
+    /*border: gray solid 0.5px;*/
     height: 5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    padding: 0;
     color:darkslategray;
-
 }
 
 
 .restaurant-name {
 
-    float:left;
+
     /*border: gray solid 0.5px;*/
-    margin: auto;
     height: 5rem;
-    width:350px;
+    margin:auto;
+    width: calc(33% - 24px);
+    float:left;
+    left:0px;
     color:darkslategray;
     font-family: "Palatino Linotype";
 
@@ -476,21 +478,33 @@ nav {
     /*border: gray solid 0.5px;*/
     margin: auto;
     height: 5rem;
+    left: calc(33% - 24px);
+    width: calc(33% - 24px);
     float:left;
-    width:350px;
     color:darkslategray;
     font-family: "Palatino Linotype";
 
 }
 
 .rating{
+
     /*border: gray solid 0.5px;*/
-    float:left;
-    width: 300px;
-    margin: auto;
+    margin:auto;
     height: 5rem;
+    left:calc(66% - 48px);
+    width: calc(33% - 24px);
+    float: left;
+    color:darkslategray;
+    font-family: "Palatino Linotype";
 
 
+}
+
+.vote{
+
+    margin-left:8rem;
+    margin-top:1rem;
+    clear: both;
 }
 
 .grey {
@@ -552,7 +566,30 @@ nav {
     clear:both;
 }
 
-.meal{
+.meal-mean{
+    /*border: gray solid 0.5px;*/
+    margin-top:1rem;
+    margin-left:1rem;
+    font-family: "Palatino Linotype";
+    clear:both;
+}
+
+.meal-app{
+    /*border: gray solid 0.5px;*/
+    margin-top:1rem;
+    margin-left:1rem;
+    font-family: "Palatino Linotype";
+    clear:both;
+}
+
+.meal-des{
+    margin-top:1rem;
+    margin-left:1rem;
+    font-family: "Palatino Linotype";
+    clear:both;
+}
+
+.meal-drinks{
     margin-top:1rem;
     margin-left:1rem;
     font-family: "Palatino Linotype";
@@ -562,24 +599,106 @@ nav {
 }
 
 .meal-image{
+    /*border: gray solid 0.5px;*/
     float:left;
-    width:137px;
+    left:0px;
+    width:15%;
     margin-bottom: 1rem;
 }
 
 .mealnd{
-
+    /*border: gray solid 0.5px;*/
     float:left;
-    width:800px;
+    width:60%;
     margin-left:1rem;
     margin-top:1px;
 }
 
 .price{
-
+    /*border: gray solid 0.5px;*/
     float:right;
-    width:100px;
-    margin-top:1px;
+    width:10%;
+}
+
+@media screen and (max-width: 880px) {
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 17px;
+
+    }
+
+    h3 {
+        font-size: 14px;
+
+    }
+
+    h4 {
+        font-size: 10px;
+
+    }
+
+    .restaurant-info{
+
+        display: table;
+        float: none !important;
+        /*border: gray solid 0.5px;*/
+
+
+    }
+
+    .picture{
+        height: 10rem !important;
+    }
+
+    .restaurant-name {
+
+        float: none !important;
+        display: table-header-group;
+        height:3rem !important;
+    }
+
+    .restaurant-open{
+
+        float: none !important;
+        display: table-row-group;
+        height:3rem !important;
+    }
+
+    .rating{
+
+        float:none !important;
+        display: table-footer-group;
+        height:3rem !important;
+
+    }
+
+    .meal-image{
+        /*border: gray solid 0.5px;*/
+        float:none !important;
+        left:0px;
+        width:15%;
+        margin-bottom: 0rem !important;
+        margin-left: 30% !important;
+    }
+
+    .mealnd{
+        /*border: gray solid 0.5px;*/
+        float:none !important;
+        width:100% !important;
+        margin-left: 0px !important;
+        margin-top:0px !important;
+    }
+
+    .price{
+        /*border: gray solid 0.5px;*/
+        float:none !important;
+        width:10%;
+        margin-left: 35% !important;
+    }
 
 }
 /*Katja -Restaurant Page*/
