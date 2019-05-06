@@ -168,12 +168,14 @@ nav {
     overflow: hidden;
 }
 
-.restcontainer .nameof {
+.restcontainer .nameof,
+.restcontainer .revtitle {
     margin: 20px;
     display: block;
 }
 
-.restcontainer .text {
+.restcontainer .text,
+.restcontainer.revtext {
     margin: 10px;
     display: block;
 }
@@ -189,7 +191,8 @@ nav {
 
 }
 
-.info img {
+.info img,
+.revrating {
     width: 15rem;
     height: 4rem;
 }
@@ -364,13 +367,21 @@ nav {
 
     .restcontainer {
         height: auto;
-
         margin-bottom: 10px;
         margin-top: 10px;
     }
 
-    .restcontainer .info {
+    .restcontainer .info,
+    .restcontainer .revrating {
         height: auto;
+        position: static;
+        left: 0;
+        right: 0;
+    }
+
+    .restcontainer.revrating {
+        margin-top: 10px;
+        margin-left: 15px;
     }
 
     .restcontainer img {
@@ -381,25 +392,30 @@ nav {
         margin-left: 5px;
     }
 
-    .restcontainer .info img {
+    .restcontainer .info img,
+    .restcontainer .revrating img {
         width: 15rem;
         height: 4rem;
         display: block;
     }
 
+    #Reviews .revrating{
+        float: none !important;
+    }
+
     .restcontainer .review {
-        display: inline-block;
+        display: block;
         position: static;
     }
 
-    .restcontainer .text {
+    .restcontainer .text,
+    .restcontainer .revtext {
         display: inline-block;
         position: static;
     }
 
     .restcontainer .info {
         display: block;
-        position: static;
     }
 
 }
@@ -415,8 +431,8 @@ nav {
 
     }
 
-    .restcontainer .info
-    .restcontainer .revrating{
+    .restcontainer .info,
+    .restcontainer .revrating {
         height: auto;
         font-size: 60%;
     }
@@ -430,13 +446,14 @@ nav {
     }
 
     .restcontainer .info img,
-    .restcontainer .revrating img{
+    .restcontainer .revrating img {
         width: 8rem;
         height: 2rem;
         display: block;
     }
 
-    .restcontainer .review {
+    .restcontainer .review,
+    .restcontainer .revrating {
         display: inline-block;
         position: static;
         font-size: 70%;
@@ -444,14 +461,17 @@ nav {
         margin: 0;
     }
 
-    .restcontainer .text {
+    .restcontainer .text,
+    .restcontainer .revtext {
         display: inline-block;
         position: static;
     }
 
-    .restcontainer .info {
+    .restcontainer .info,
+    .restcontainer .revrating {
         display: block;
         position: static;
+        float: none;
     }
 }
 
@@ -642,13 +662,10 @@ nav {
     width: 10%;
 }
 
-#Reviews .revrating {
+#Reviews .revrating{
+    display: block;
     float: right;
-    width: 30%;
-    display: inline-block;
-
 }
-
 #Reviews .revrating img {
     height: 4rem;
     width: 14rem;
@@ -672,15 +689,25 @@ nav {
 
     h4 {
         font-size: 10px;
-
     }
+    #Reviews h2,
+    #retrts h2{
+        font-size: 25px;
+    }
+    #Reviews h3,
+    #retrts h3{
+        font-size: 18px;
+    }
+    #Reviews h4,
+    #retrts h4{
+        font-size: 15px;
+    }
+
 
     .restaurant-info {
 
         display: table;
         float: none !important;
-        /*border: gray solid 0.5px;*/
-
 
     }
 
@@ -711,7 +738,6 @@ nav {
     }
 
     .uploadreview {
-
 
         float: none !important;
         display: table-footer-group;
@@ -823,7 +849,7 @@ nav {
     border-radius: 15px 15px 15px 0px;
 }
 
-#uploadform input[type="submit"]{
+#uploadform input[type="submit"] {
     position: relative;
     display: block;
     padding: 19px 39px 18px 39px;
@@ -843,7 +869,7 @@ nav {
     background: #109177;
 }
 
-#uploadform input[type="button"]{
+#uploadform input[type="button"] {
 
     position: relative;
     display: block;
@@ -860,7 +886,8 @@ nav {
     border-radius: 5px;
 
 }
-#uploadform input[type="button"]:hover{
+
+#uploadform input[type="button"]:hover {
     background: red;
 }
 
