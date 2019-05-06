@@ -54,7 +54,7 @@
     </div>
     <div class="uploadreview">
         <button class="overlaybutton" onclick="on()">Upload Review</button>
-        <div id="overlay" onclick="off()">
+        <div id="overlay" >
 
             <div id="uploadform">
                 <form>
@@ -70,6 +70,7 @@
                         <label for="file" class="uploadbutton">Add</label>
                     </fieldset>
                     <input type="submit" value="Upload"/>
+                    <input type="button" onclick="off()" value="Close"/>
                 </form>
             </div>
         </div>

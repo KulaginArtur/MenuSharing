@@ -821,7 +821,7 @@ nav {
     border-radius: 15px 15px 15px 0px;
 }
 
-#uploadform input[type="submit"] {
+#uploadform input[type="submit"]{
     position: relative;
     display: block;
     padding: 19px 39px 18px 39px;
@@ -839,6 +839,27 @@ nav {
 
 #uploadform input[type="submit"]:hover {
     background: #109177;
+}
+
+#uploadform input[type="button"]{
+
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background: indianred;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: solid indianred;
+    border-width: 1px 1px 3px;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+
+}
+#uploadform input[type="button"]:hover{
+    background: red;
 }
 
 /* Make original file upload tag hidden */
