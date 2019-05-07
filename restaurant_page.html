@@ -17,6 +17,7 @@
             </button>
             <div class="dropdown-content">
                 <a href="index.html" class="linkki">Home</a>
+                <!--
                 <div class="linkki">
                     <div class="linkkinap" class="linkki" onclick="myFunction()">Jotain2</div>
                     <i class="fa fa-caret-down"></i>
@@ -26,7 +27,8 @@
                         <a href="https://www.google.fi/">Linkki 3</a>
                     </div>
                 </div>
-                <a href="" class="linkki">Jotain</a>
+                -->
+                <a href="login.html" class="linkki">Login</a>
             </div>
         </div>
     </nav>
@@ -49,12 +51,22 @@
         <h3 class="grey">11:00-24:00</h3>
     </div>
     <div class="rating">
-        <img src="https://i.frg.im/fE0xj1Do/5-gold-stars1.jpg?r=f7G6OxBIprgI4HtGFbZKFxyTdvWDTgzQ0TDChDsTmcW4gIEKizgKpa"
-             height="70px">
+        <div class="rate">
+            <input type="radio" id="star5" name="rate" value="5"/>
+            <label for="star5" title="text">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4"/>
+            <label for="star4" title="text">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3"/>
+            <label for="star3" title="text">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2"/>
+            <label for="star2" title="text">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1"/>
+            <label for="star1" title="text">1 star</label>
+        </div>
     </div>
     <div class="uploadreview">
         <button class="overlaybutton" onclick="on()">Upload Review</button>
-        <div id="overlay" >
+        <div id="overlay">
 
             <div id="uploadform">
                 <form>
@@ -62,6 +74,28 @@
                         <legend><span class="number">1</span> Review</legend>
                         <input type="text" name="field2" placeholder="Title">
                         <textarea name="field3" placeholder="Review"></textarea>
+                        <div class="rate">
+                            <input type="radio" id="star5" name="rate" value="5"/>
+                            <label for="star5" title="text">5 stars</label>
+                            <input type="radio" id="star4" name="rate" value="4"/>
+                            <label for="star4" title="text">4 stars</label>
+                            <input type="radio" id="star3" name="rate" value="3"/>
+                            <label for="star3" title="text">3 stars</label>
+                            <input type="radio" id="star2" name="rate" value="2"/>
+                            <label for="star2" title="text">2 stars</label>
+                            <input type="radio" id="star1" name="rate" value="1"/>
+                            <label for="star1" title="text">1 star</label>
+                        </div>
+                        <form id="form" class="star_value" action="./rating" method="post">
+
+                            <input type="number" name="star_value" id="rating_value" readonly="true">
+                            <!-- Not sure if this is needed
+                            <input type="submit"> -->
+                        </form>
+
+                        <div class="star_value">
+                            <p></p>
+                        </div>
 
                     </fieldset>
                     <fieldset>
@@ -169,16 +203,29 @@
 
         <div class="review">
             <div class="revtitle">
+                <h3>UserName</h3>
                 <h2>Very good!</h2>
             </div>
             <div class="revtext">
+                <h6>25.5.2019</h6>
                 <p>Wood was really good</p>
 
             </div>
         </div>
         <div class="revrating">
             <h3>Rating</h3>
-            <img src="Kuvat/stars.png" alt="">
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5"/>
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4"/>
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3"/>
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2"/>
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1"/>
+                <label for="star1" title="text">1 star</label>
+            </div>
         </div>
     </div>
 </div>

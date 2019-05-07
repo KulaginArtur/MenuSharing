@@ -231,6 +231,7 @@ nav {
 .feed {
     -ms-flex: 70%; /* IE10 */
     flex: 70%;
+    height: 100%;
     background-color: white;
     padding: 20px;
 }
@@ -399,7 +400,7 @@ nav {
         display: block;
     }
 
-    #Reviews .revrating{
+    #Reviews .revrating {
         float: none !important;
     }
 
@@ -662,10 +663,11 @@ nav {
     width: 10%;
 }
 
-#Reviews .revrating{
+#Reviews .revrating {
     display: block;
     float: right;
 }
+
 #Reviews .revrating img {
     height: 4rem;
     width: 14rem;
@@ -690,16 +692,19 @@ nav {
     h4 {
         font-size: 10px;
     }
+
     #Reviews h2,
-    #retrts h2{
+    #retrts h2 {
         font-size: 25px;
     }
+
     #Reviews h3,
-    #retrts h3{
+    #retrts h3 {
         font-size: 18px;
     }
+
     #Reviews h4,
-    #retrts h4{
+    #retrts h4 {
         font-size: 15px;
     }
 
@@ -891,6 +896,56 @@ nav {
     background: red;
 }
 
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+.rate:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+.star_value {
+    padding-left: 15px;
+    color: #1ABD9C;
+
+}
+
 /* Make original file upload tag hidden */
 .inputfile {
     width: 0.1px;
@@ -962,4 +1017,39 @@ nav {
 
 .overlaybutton:hover {
     background: #109177;
+}
+
+/* Login form */
+
+#loginform {
+    padding: 16px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#loginform button {
+    margin: 8px 0;
+    cursor: pointer;
+    padding: 19px 50px 18px 20px;
+    color: #FFF;
+    background: #1abc9c;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#loginform button:hover {
+    opacity: 0.8;
 }
