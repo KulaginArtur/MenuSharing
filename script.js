@@ -1,6 +1,6 @@
 'use strict';
 
-function myFunction() {
+const myFunction = () => {
   document.getElementById('myDropdown').classList.toggle('show');
 };
 
@@ -13,16 +13,16 @@ window.onclick = (e) => {
   }
 };
 
-function on() {
+const on = () => {
   document.getElementById('overlay').style.display = 'block';
-}
+};
 
-function off() {
+const off = () => {
   document.getElementById('overlay').style.display = 'none';
-}
+};
 
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
+const openCity = (evt, cityName) => {
+  let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName('tabcontent');
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = 'none';
@@ -33,7 +33,7 @@ function openCity(evt, cityName) {
   }
   document.getElementById(cityName).style.display = 'block';
   evt.currentTarget.className += ' active';
-}
+};
 
 document.getElementById('defaultOpen').click();
 
@@ -43,24 +43,20 @@ const meal_mean = document.getElementsByClassName('meal-mean');
 
 for (let i = 0; i < meal_mean.length; i++) {
   meal_mean[i].style.display = 'none';
-}
-;
+};
 const meal_app = document.getElementsByClassName('meal-app');
 for (let i = 0; i < meal_app.length; i++) {
   meal_app[i].style.display = 'none';
-}
-;
+};
 const meal_des = document.getElementsByClassName('meal-des');
 for (let i = 0; i < meal_des.length; i++) {
   meal_des[i].style.display = 'none';
-}
-;
+};
 
 const meal_drinks = document.getElementsByClassName('meal-drinks');
 for (let i = 0; i < meal_drinks.length; i++) {
   meal_drinks[i].style.display = 'none';
-}
-;
+};
 
 //ends "hiding meals" block
 
@@ -176,8 +172,39 @@ for (let i = 0; i < document.getElementsByName('rate').length; i++) {
           '3') {p.value = 3;} else if (ratingValue ===
           '2') {p.value = 2;} else {p.value = 1;}
 
-    }
-    ;
+    };
 
   });
 }
+
+function validate() {
+  const firstname = document.getElementById('uname');
+
+  const password = document.getElementById('psw');
+
+
+
+  if (firstname.value === '' || lastname.value === '' || email.value === ''|| phone.value === ''|| password.value === '') {
+    alert('No blank values allowed');
+    firstname.style.border = '2px solid red';
+    return false;
+  } else if(postal.value.length<5){
+    alert('Postal code too short');
+    postal.style.border = '2px solid red';
+    return false;
+  } else if (postal.value.length>5){
+    alert('Postal code too long');
+    postal.style.border = '2px solid red';
+    return false;
+  } /*else if(email.pattern !== emailvalid ){ // Can't get email or phone validation to work.
+    alert('Not valid email');
+    email.style.border = '2px solid red';
+    return false;
+  } else if(phone.pattern !== phonevalid){
+    alert('Not valid phone');
+    phone.style.border = '2px solid red';
+    return false
+  } */else{
+    return true;
+  }
+};

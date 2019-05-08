@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 -->
-                <a href="login.html" class="linkki">Login</a>
+                <a href="login.html" class="linkki">Log in</a>
             </div>
         </div>
     </nav>
@@ -39,7 +39,7 @@
     </div>
 </header>
 <div class="main">
-    <div id="loginform">
+    <form id="loginform" onsubmit="return validate()" >
         <label ><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -48,7 +48,7 @@
 
         <button type="submit">Login</button>
         <a href="Register.html">Sign Up</a>
-    </div>
+    </form>
 
 </div>
 <script src="script.js"></script>

@@ -17,7 +17,8 @@ body {
     margin: 0;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     min-height: 100%;
@@ -103,7 +104,7 @@ nav {
     width: 80%;
     margin: auto;
 }
-
+/* Haku */
 .searchbar {
     width: 70%;
     margin: auto;
@@ -131,10 +132,12 @@ nav {
     float: right;
     border-radius: 7px;
 }
+/* Haku */
+
+/* Kotisivun ravintolat */
 
 #retrts {
     width: 100%;
-
 }
 
 .restcontainer {
@@ -196,7 +199,9 @@ nav {
     width: 15rem;
     height: 4rem;
 }
+/* Kotisivun ravintolat */
 
+/* Profiili */
 
 .pmain {
     display: -ms-flexbox; /* IE10 */
@@ -235,7 +240,7 @@ nav {
     background-color: white;
     padding: 20px;
 }
-
+ /* Profiili */
 
 /* Mobiili */
 
@@ -479,6 +484,8 @@ nav {
         float: none;
     }
 }
+
+/* Mobiili */
 
 /*Katja -Restaurant Page*/
 
@@ -783,6 +790,8 @@ nav {
 
 /*Katja -Restaurant Page*/
 
+/* Upload form */
+
 #uploadform {
     position: static;
     max-width: 500px;
@@ -900,6 +909,10 @@ nav {
     background: red;
 }
 
+
+
+/* Star rating */
+
 .rate {
     float: left;
     height: 46px;
@@ -949,6 +962,8 @@ nav {
     color: #1ABD9C;
 
 }
+
+/* Star rating */
 
 /* Make original file upload tag hidden */
 .inputfile {
@@ -1024,7 +1039,9 @@ nav {
     background: #109177;
 }
 
-/* Login form */
+/* Upload Form */
+
+/* Login page */
 
 #loginform {
     padding: 16px;
@@ -1059,3 +1076,5 @@ nav {
 #loginform button:hover {
     opacity: 0.8;
 }
+
+/* Login page */
