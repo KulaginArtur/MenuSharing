@@ -43,20 +43,24 @@ const meal_mean = document.getElementsByClassName('meal-mean');
 
 for (let i = 0; i < meal_mean.length; i++) {
   meal_mean[i].style.display = 'none';
-};
+}
+;
 const meal_app = document.getElementsByClassName('meal-app');
 for (let i = 0; i < meal_app.length; i++) {
   meal_app[i].style.display = 'none';
-};
+}
+;
 const meal_des = document.getElementsByClassName('meal-des');
 for (let i = 0; i < meal_des.length; i++) {
   meal_des[i].style.display = 'none';
-};
+}
+;
 
 const meal_drinks = document.getElementsByClassName('meal-drinks');
 for (let i = 0; i < meal_drinks.length; i++) {
   meal_drinks[i].style.display = 'none';
-};
+}
+;
 
 //ends "hiding meals" block
 
@@ -172,39 +176,28 @@ for (let i = 0; i < document.getElementsByName('rate').length; i++) {
           '3') {p.value = 3;} else if (ratingValue ===
           '2') {p.value = 2;} else {p.value = 1;}
 
-    };
+    }
+    ;
 
   });
 }
+const submit = document.getElementById('Submit');
 
-function validate() {
-  const firstname = document.getElementById('uname');
+const validate = (evt) => {
 
-  const password = document.getElementById('psw');
+  evt.preventDefault();
+  const username = document.loginForm.uname;
+  const password = document.loginForm.psw;
 
+  console.log(username.value);
 
-
-  if (firstname.value === '' || lastname.value === '' || email.value === ''|| phone.value === ''|| password.value === '') {
+  if (username.value === '') {
     alert('No blank values allowed');
-    firstname.style.border = '2px solid red';
+    username.style.border = '2px solid red';
     return false;
-  } else if(postal.value.length<5){
-    alert('Postal code too short');
-    postal.style.border = '2px solid red';
-    return false;
-  } else if (postal.value.length>5){
-    alert('Postal code too long');
-    postal.style.border = '2px solid red';
-    return false;
-  } /*else if(email.pattern !== emailvalid ){ // Can't get email or phone validation to work.
-    alert('Not valid email');
-    email.style.border = '2px solid red';
-    return false;
-  } else if(phone.pattern !== phonevalid){
-    alert('Not valid phone');
-    phone.style.border = '2px solid red';
-    return false
-  } */else{
+  } else {
     return true;
   }
 };
+
+submit.addEventListener('submit', validate);

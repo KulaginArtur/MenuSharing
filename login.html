@@ -39,14 +39,14 @@
     </div>
 </header>
 <div class="main">
-    <form id="loginform" onsubmit="return validate()" >
+    <form  name="loginForm" onsubmit="return validate()" method="post" id="loginform" >
         <label ><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <input type="text" placeholder="Enter Username" name="uname" >
 
         <label ><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" placeholder="Enter Password" name="psw" >
 
-        <button type="submit">Login</button>
+        <button type="submit" id="Submit" >Login</button>
         <a href="Register.html">Sign Up</a>
     </form>
 
