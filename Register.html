@@ -39,20 +39,20 @@
     </div>
 </header>
 <div class="main">
-    <div id="loginform">
+    <form name="registrationForm" action="index.html" onsubmit="return validate(event)" method="post" id="loginform">
         <label ><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <input type="text" placeholder="Enter Username" name="uname" >
 
         <label ><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" placeholder="Enter Password" name="psw" >
 
         <label ><b>Confirm Password</b></label>
-        <input type="password" placeholder="Enter Password" name="repsw" required>
+        <input type="password" placeholder="Enter Password" name="repsw" >
 
         <button type="submit">Register</button>
-    </div>
+    </form>
 
 </div>
-<script src="script.js"></script>
+<script src="signin.js"></script>
 </body>
 </html>

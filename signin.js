@@ -1,31 +1,35 @@
 'use strict';
 
-const submit = document.getElementById('Submit');
+const username = document.registrationForm.uname;
+const psw = document.registrationForm.psw;
+const repsw = document.registrationForm.repsw;
+const regform = document.registrationForm;
 
-const validate = (event) => {
+regform.addEventListener('submit',(evt)=> {
 
-  event.preventDefault();
-
-  const username = document.loginForm.uname;
-  const password = document.loginForm.psw;
+  evt.preventDefault();
 
   if (username.value === ''  ) {
     username.style.border = '2px solid red';
     alert('No blank values allowed');
     return false;
-  } else if(password.value === '') {
+  }else if(psw.value === '') {
     username.style.border = '1px solid #ccc';
     alert('No blank values allowed');
-    password.style.border = '2px solid red';
+    psw.style.border = '2px solid red';
     return false;
-  }else {
-    password.style.border = '1px solid #ccc';
-    document.loginForm.submit();
+  }else if (psw.value != repsw.value) {
+    psw.style.border = '2px solid red';
+    repsw.style.border = '2px solid red';
+    alert ("Passwords don't match")
+  } else {
+    psw.style.border = '1px solid #ccc';
+    repsw.style.border = '1px solid #ccc';
+    document.registrationForm.submit();
     alert('You are logged in');
     return true;
-  }
-
-};
+  } ;
+});
 
 submit.addEventListener('submit', validate);
 
@@ -41,3 +45,4 @@ window.onclick = (e) => {
     }
   }
 };
+
