@@ -105,6 +105,7 @@ nav {
     width: 80%;
     margin: auto;
 }
+
 /* Haku */
 .searchbar {
     width: 70%;
@@ -133,6 +134,7 @@ nav {
     float: right;
     border-radius: 7px;
 }
+
 /* Haku */
 
 /* Kotisivun ravintolat */
@@ -175,7 +177,7 @@ nav {
 .restcontainer .nameof,
 .restcontainer .revtitle {
     margin: 20px;
-    display: block;
+    display: inline-block;
 }
 
 .restcontainer .text,
@@ -196,10 +198,19 @@ nav {
 }
 
 .info img,
-.revrating {
-    width: 15rem;
-    height: 4rem;
+.revrating img {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    position: static;
+
 }
+
+.info h2 {
+    display: inline;
+    position: static;
+}
+
 /* Kotisivun ravintolat */
 
 /* Profiili */
@@ -241,7 +252,8 @@ nav {
     background-color: white;
     padding: 20px;
 }
- /* Profiili */
+
+/* Profiili */
 
 /* Mobiili */
 
@@ -401,9 +413,9 @@ nav {
 
     .restcontainer .info img,
     .restcontainer .revrating img {
-        width: 15rem;
-        height: 4rem;
-        display: block;
+        width: 50px;
+        height: 50px;
+        display: inline;
     }
 
     #Reviews .revrating {
@@ -442,6 +454,7 @@ nav {
     .restcontainer .revrating {
         height: auto;
         font-size: 60%;
+
     }
 
     .restcontainer img {
@@ -455,9 +468,9 @@ nav {
 
     .restcontainer .info img,
     .restcontainer .revrating img {
-        width: 8rem;
-        height: 2rem;
-        display: block;
+        width: 50px;
+        height: 50px;
+        display: inline;
     }
 
     .restcontainer .review,
@@ -468,7 +481,8 @@ nav {
         overflow: initial;
         margin: 0;
     }
-    .restcontainer .review{
+
+    .restcontainer .review {
         width: 200px;
     }
 
@@ -520,7 +534,6 @@ nav {
     height: 5rem;
     width: 30%;
     color: darkslategray;
-    font-family: "Palatino Linotype";
     display: inline-block;
 
 }
@@ -532,20 +545,28 @@ nav {
     height: 5rem;
     width: 20%;
     color: darkslategray;
-    font-family: "Palatino Linotype";
     display: inline-block;
 
 }
 
 .rating {
-
     /*border: gray solid 0.5px;*/
     margin: auto;
     height: 5rem;
-    width: 25%;
     color: darkslategray;
-    font-family: "Palatino Linotype";
     display: inline-block;
+}
+
+.rating img {
+    display: inline;
+    height: 70px;
+}
+
+.rating h2 {
+    display: inline;
+    height: 70px;
+    margin-left: 10px;
+    text-align: center;
 }
 
 .uploadreview {
@@ -590,7 +611,6 @@ nav {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-family: "Palatino Linotype";
 }
 
 /* Change background color of buttons on hover */
@@ -618,7 +638,6 @@ nav {
 
 .typeOfFood {
     border: gray solid 0.5px;
-    font-family: "Palatino Linotype";
     background-color: #f1f1f1;
     clear: both;
 }
@@ -627,7 +646,6 @@ nav {
     /*border: gray solid 0.5px;*/
     margin-top: 1rem;
     margin-left: 1rem;
-    font-family: "Palatino Linotype";
     clear: both;
 }
 
@@ -635,21 +653,18 @@ nav {
     /*border: gray solid 0.5px;*/
     margin-top: 1rem;
     margin-left: 1rem;
-    font-family: "Palatino Linotype";
     clear: both;
 }
 
 .meal-des {
     margin-top: 1rem;
     margin-left: 1rem;
-    font-family: "Palatino Linotype";
     clear: both;
 }
 
 .meal-drinks {
     margin-top: 1rem;
     margin-left: 1rem;
-    font-family: "Palatino Linotype";
     clear: both;
 
 }
@@ -679,11 +694,21 @@ nav {
 #Reviews .revrating {
     display: block;
     float: right;
+    margin-right: 50px;
+}
+
+#Reviews .revrating h3 {
+    display: block;
 }
 
 #Reviews .revrating img {
-    height: 4rem;
-    width: 14rem;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+#Reviews .revrating h2 {
+    display: inline;
 }
 
 @media screen and (max-width: 860px) {
@@ -753,6 +778,17 @@ nav {
         /*display: table-footer-group;*/
         height: 3rem !important;
 
+    }
+
+    .rating img {
+        display: inline;
+        height: 40px;
+        width: 40px;
+    }
+
+    .rating h2 {
+        font-size: 20px;
+        display: inline;
     }
 
     .uploadreview {
@@ -910,7 +946,6 @@ nav {
 #uploadform input[type="button"]:hover {
     background: red;
 }
-
 
 
 /* Star rating */
