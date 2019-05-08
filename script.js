@@ -153,8 +153,6 @@ deserts.addEventListener('click', () => {
   ;
 });
 
-'use strict';
-
 console.log(document.getElementsByName('rate').length);
 
 const rate = document.getElementsByName('rate');
