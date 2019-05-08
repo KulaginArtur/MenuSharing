@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7828afb9-879a-487e-9e96-210c97bb1c35" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/restaurant_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,11 +18,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.61388385">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="551">
-                  <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="54" />
+                <state relative-caret-position="1156">
+                  <caret line="61" column="50" lean-forward="true" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="50" />
                 </state>
               </provider>
             </entry>
@@ -77,7 +75,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/profile.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="713">
@@ -93,8 +91,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="392">
-                  <caret line="1032" column="26" lean-forward="true" selection-start-line="1032" selection-start-column="26" selection-end-line="1032" selection-end-column="26" />
+                <state relative-caret-position="560">
+                  <caret line="446" column="23" selection-start-line="446" selection-start-column="23" selection-end-line="446" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -134,9 +132,9 @@
         <option value="$PROJECT_DIR$/script.js" />
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/Register.html" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/restaurant_page.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -147,9 +145,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-1920" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="width" value="2560" />
+    <option name="height" value="1600" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -216,7 +213,7 @@
       <workItem from="1556863842648" duration="10692000" />
       <workItem from="1556875906696" duration="5124000" />
       <workItem from="1557077505599" duration="122000" />
-      <workItem from="1557122088001" duration="20217000" />
+      <workItem from="1557122088001" duration="20782000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1556100908534</created>
@@ -428,17 +425,38 @@
       <option name="project" value="LOCAL" />
       <updated>1557224885247</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="commit">
+      <created>1557234999422</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1557234999422</updated>
+    </task>
+    <task id="LOCAL-00032" summary="commit">
+      <created>1557235047530</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1557235047530</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Fixed uploadform">
+      <created>1557295443641</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1557295443641</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69376000" />
+    <option name="totallyTimeSpent" value="69941000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="2560" height="1600" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.099574015" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07426529" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -450,7 +468,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49958882" visible="true" weight="0.15940595" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49958882" visible="true" weight="0.10522876" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004112" side_tool="true" weight="0.14343435" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32941177" />
       <window_info active="true" anchor="bottom" id="File Transfer" order="12" visible="true" weight="0.32996634" />
@@ -467,7 +485,8 @@
     <MESSAGE value="Profile page update" />
     <MESSAGE value="Home Page" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="Fixed uploadform" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed uploadform" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MenuSharing/profile.html" />
@@ -509,13 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-378">
@@ -537,10 +549,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="61" column="50" lean-forward="true" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="1032" column="26" lean-forward="true" selection-start-line="1032" selection-start-column="26" selection-end-line="1032" selection-end-column="26" />
+        <state relative-caret-position="560">
+          <caret line="446" column="23" selection-start-line="446" selection-start-column="23" selection-end-line="446" selection-end-column="23" />
         </state>
       </provider>
     </entry>

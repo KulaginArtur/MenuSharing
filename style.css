@@ -444,6 +444,7 @@ nav {
         display: inline-block;
         position: static;
         margin-left: 5px;
+        margin-top: 5px;
     }
 
     .restcontainer .info img,
@@ -460,6 +461,9 @@ nav {
         font-size: 70%;
         overflow: initial;
         margin: 0;
+    }
+    .restcontainer .review{
+        width: 200px;
     }
 
     .restcontainer .text,
