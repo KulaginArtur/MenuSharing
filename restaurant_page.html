@@ -53,7 +53,7 @@
         <h3 class="grey">11:00-24:00</h3>
     </div>
     <div class="rating">
-        <img src="Kuvat/stars.png" >
+        <img src="Kuvat/stars.png">
         <h2>4.3</h2>
     </div>
     <div class="uploadreview">
@@ -78,25 +78,24 @@
                             <input type="radio" id="star1" name="rate" value="1"/>
                             <label for="star1" title="text">1 star</label>
                         </div>
-                        <form id="form" class="star_value" action="./rating" method="post">
 
-                            <input type="number" name="star_value" id="rating_value" readonly="true">
-                            <!-- Not sure if this is needed
-                            <input type="submit"> -->
-                        </form>
+                        <input type="number" name="star_value" id="rating_value" readonly="true">
+                        <!-- Not sure if this is needed
+                        <input type="submit"> -->
+                </form>
 
-                        <div class="star_value">
-                            <p></p>
-                        </div>
+                <div class="star_value">
+                    <p></p>
+                </div>
 
-                    </fieldset>
-                    <fieldset>
-                        <legend><span class="number">2</span> Photo upload</legend>
-                        <input type="file" name="photo" id="file" accept="image/*" class="inputfile">
-                        <label for="file" class="uploadbutton">Add</label>
-                    </fieldset>
-                    <input type="submit" value="Upload"/>
-                    <input type="button" onclick="off()" value="Close"/>
+                </fieldset>
+                <fieldset>
+                    <legend><span class="number">2</span> Photo upload</legend>
+                    <input type="file" name="photo" id="file" accept="image/*" class="inputfile">
+                    <label for="file" class="uploadbutton">Add</label>
+                </fieldset>
+                <input type="submit" value="Upload"/>
+                <input type="button" onclick="off()" value="Close"/>
                 </form>
             </div>
         </div>
