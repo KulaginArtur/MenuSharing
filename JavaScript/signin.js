@@ -18,7 +18,7 @@ regform.addEventListener('submit',(evt)=> {
     alert('No blank values allowed');
     psw.style.border = '2px solid red';
     return false;
-  }else if (psw.value != repsw.value) {
+  }else if (psw.value !== repsw.value) {
     psw.style.border = '2px solid red';
     repsw.style.border = '2px solid red';
     alert ("Passwords don't match")
@@ -28,7 +28,7 @@ regform.addEventListener('submit',(evt)=> {
     document.registrationForm.submit();
     alert('You are logged in');
     return true;
-  } ;
+  }
 });
 
 submit.addEventListener('submit', validate);

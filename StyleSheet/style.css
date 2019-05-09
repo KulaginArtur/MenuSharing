@@ -78,7 +78,7 @@ nav {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -167,7 +167,7 @@ nav {
     position: absolute;
     left: 250px;
     right: 0;
-    top: 0px;
+    top: 0;
     bottom: 20px;
     margin: 0 12px;
     display: block;
@@ -259,7 +259,7 @@ nav {
 
 @media screen and (min-width: 800px) {
     #logo {
-        padding: 0px;
+        padding: 0;
         margin-left: 20px;
     }
 
@@ -270,8 +270,6 @@ nav {
 
     .linkkinap {
         color: #000;
-        font-size: 16px;
-        font-size: 150%;
         padding-right: 10px;
         cursor: pointer;
     }
@@ -325,7 +323,7 @@ nav {
         position: absolute;
         background-color: #f9f9f9;
         min-width: 160px;
-        box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.2);
         z-index: 1;
     }
 
@@ -339,10 +337,7 @@ nav {
 
     .linkkinap {
         color: #000;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        padding-left: 60px;
-        padding-right: 60px;
+        padding: 12px 60px;
         text-decoration: none;
         display: block;
         cursor: pointer;
@@ -570,9 +565,8 @@ nav {
 }
 
 .uploadreview {
-    margin: auto;
     float: right;
-    margin-top: 15px;
+    margin: 15px auto auto;
     width: 20%;
     display: inline-block;
 }
@@ -672,9 +666,13 @@ nav {
 .meal-image {
     /*border: gray solid 0.5px;*/
     float: left;
-    left: 0px;
+    left: 0;
     width: 15%;
     margin-bottom: 1rem;
+}
+
+.meal-image img{
+    height: 100px;
 }
 
 .mealnd {
@@ -803,9 +801,9 @@ nav {
     .meal-image {
         /*border: gray solid 0.5px;*/
         float: none !important;
-        left: 0px;
+        left: 0;
         width: 15%;
-        margin-bottom: 0rem !important;
+        margin-bottom: 0 !important;
         margin-left: 30% !important;
     }
 
@@ -813,8 +811,8 @@ nav {
         /*border: gray solid 0.5px;*/
         float: none !important;
         width: 100% !important;
-        margin-left: 0px !important;
-        margin-top: 0px !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
     }
 
     .price {
@@ -836,8 +834,6 @@ nav {
     padding: 10px 20px;
     background: #f4f7f8;
     margin: 10px auto;
-    padding: 20px;
-    background: #f4f7f8;
     border-radius: 8px;
     font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -861,22 +857,20 @@ nav {
 #uploadform textarea,
 #uploadform select {
     font-family: Georgia, "Times New Roman", Times, serif;
-    background: rgba(255, 255, 255, .1);
     border: none;
     border-radius: 4px;
     font-size: 15px;
-    margin: 0;
     outline: 0;
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    background-color: #e8eeef;
+    background: #e8eeef;
     color: #8a97a0;
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
 }
 
 #uploadform input[type="text"]:focus,
@@ -902,7 +896,7 @@ nav {
     line-height: 30px;
     text-align: center;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-    border-radius: 15px 15px 15px 0px;
+    border-radius: 15px 15px 15px 0;
 }
 
 #uploadform input[type="submit"] {
@@ -1095,7 +1089,6 @@ nav {
 }
 
 #loginform button {
-    margin: 8px 0;
     cursor: pointer;
     padding: 19px 50px 18px 20px;
     color: #FFF;
@@ -1106,7 +1099,7 @@ nav {
     width: 100%;
     border: solid #16a085;
     border-width: 1px 1px 3px;
-    margin-bottom: 10px;
+    margin: 8px 0 10px;
     border-radius: 5px;
 }
 
