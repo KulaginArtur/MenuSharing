@@ -5,6 +5,8 @@ const psw = document.registrationForm.psw;
 const repsw = document.registrationForm.repsw;
 const regform = document.registrationForm;
 
+// When submit is pressed this checks if every field is given.
+
 regform.addEventListener('submit',(evt)=> {
 
   evt.preventDefault();

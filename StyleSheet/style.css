@@ -12,9 +12,11 @@ a {
 }
 
 /* Style the body */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    min-width: 300px;
 }
 
 html,
@@ -99,7 +101,9 @@ nav {
     display: block;
 }
 
-/*Sisältö*/
+/* Header */
+
+/* Sisältö */
 
 .main {
     width: 80%;
@@ -107,11 +111,12 @@ nav {
 }
 
 /* Haku */
+
 .searchbar {
     width: 70%;
-    margin: auto;
     height: 3rem;
-    margin-top: 2rem;
+    margin: 2rem auto;
+
 }
 
 .searchbar input[type=text] {
@@ -122,6 +127,7 @@ nav {
     height: 100%;
     float: left;
     border-radius: 7px;
+    box-shadow: 3px 3px 8px #cccccc;
 }
 
 .searchbar button {
@@ -133,6 +139,7 @@ nav {
     cursor: pointer;
     float: right;
     border-radius: 7px;
+    box-shadow: 3px 3px 8px #cccccc;
 }
 
 /* Haku */
@@ -147,8 +154,7 @@ nav {
     background: #f4f7f8;
     display: block;
     height: 17rem;
-    margin: 20px;
-    padding: 20px 0 0 0;
+    margin: 5px 20px 20px;
     position: relative;
     border: #e5e5e5 solid 1px;
     border-radius: 5px;
@@ -158,9 +164,13 @@ nav {
 .restcontainer img {
     height: 15rem;
     width: 15rem;
-    margin-left: 5px;
     display: inline-block;
     position: absolute;
+}
+
+.restcontainer .resimage img {
+
+    box-shadow: 3px 3px 8px #cccccc;
 }
 
 .restcontainer .review {
@@ -253,6 +263,7 @@ nav {
     padding: 20px;
 }
 
+
 /* Profiili */
 
 /* Mobiili */
@@ -286,6 +297,14 @@ nav {
     .dropbtn {
         display: none;
     }
+
+    .restcontainer .resimage {
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+
+
 }
 
 @media screen and (max-width: 800px) {
@@ -393,17 +412,15 @@ nav {
         right: 0;
     }
 
-    .restcontainer.revrating {
-        margin-top: 10px;
-        margin-left: 15px;
+    .restcontainer .resimage {
+        height: 12rem;
+        margin: 10px;
     }
 
-    .restcontainer img {
-        width: 10rem;
-        height: 10rem;
-        display: inline-block;
-        position: static;
-        margin-left: 5px;
+    .restcontainer .resimage img {
+        width: 96%;
+        height: 12rem;
+        object-fit: cover;
     }
 
     .restcontainer .info img,
@@ -452,13 +469,17 @@ nav {
 
     }
 
-    .restcontainer img {
-        width: 5rem;
-        height: 5rem;
-        display: inline-block;
-        position: static;
-        margin-left: 5px;
+    .restcontainer .resimage {
         margin-top: 5px;
+        margin-right: 10px;
+        height: 12rem;
+
+    }
+
+    .restcontainer .resimage img {
+        width: 95%;
+        height: 12rem;
+        object-fit: cover;
     }
 
     .restcontainer .info img,
@@ -497,7 +518,7 @@ nav {
 
 /* Mobiili */
 
-/*Katja -Restaurant Page*/
+/* Restaurant Page */
 
 .picture {
 
@@ -512,7 +533,6 @@ nav {
 
 .restaurant-info {
 
-    /*border: gray solid 0.5px;*/
     height: 5rem;
     margin-top: 1rem;
     margin-left: 2rem;
@@ -524,8 +544,6 @@ nav {
 
 .restaurant-name {
 
-
-    /*border: gray solid 0.5px;*/
     height: 5rem;
     width: 30%;
     color: darkslategray;
@@ -535,7 +553,6 @@ nav {
 
 .restaurant-open {
 
-    /*border: gray solid 0.5px;*/
     margin: auto;
     height: 5rem;
     width: 20%;
@@ -545,7 +562,7 @@ nav {
 }
 
 .rating {
-    /*border: gray solid 0.5px;*/
+
     margin: auto;
     height: 5rem;
     color: darkslategray;
@@ -622,7 +639,6 @@ nav {
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    /*border: 1px solid #ccc;*/
     border-top: none;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -637,14 +653,12 @@ nav {
 }
 
 .meal-mean {
-    /*border: gray solid 0.5px;*/
     margin-top: 1rem;
     margin-left: 1rem;
     clear: both;
 }
 
 .meal-app {
-    /*border: gray solid 0.5px;*/
     margin-top: 1rem;
     margin-left: 1rem;
     clear: both;
@@ -664,19 +678,17 @@ nav {
 }
 
 .meal-image {
-    /*border: gray solid 0.5px;*/
     float: left;
     left: 0;
     width: 15%;
     margin-bottom: 1rem;
 }
 
-.meal-image img{
+.meal-image img {
     height: 100px;
 }
 
 .mealnd {
-    /*border: gray solid 0.5px;*/
     float: left;
     width: 60%;
     margin-left: 1rem;
@@ -684,7 +696,6 @@ nav {
 }
 
 .price {
-    /*border: gray solid 0.5px;*/
     float: right;
     width: 10%;
 }
@@ -794,8 +805,6 @@ nav {
         float: none !important;
         display: table-footer-group;
         height: 3rem !important;
-
-
     }
 
     .meal-image {

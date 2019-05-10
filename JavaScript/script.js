@@ -2,6 +2,8 @@
 
 const submit = document.getElementById('Submit');
 
+// When submit is pressed this checks if every field is given.
+
 const validate = (event) => {
 
   event.preventDefault();

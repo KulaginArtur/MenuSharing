@@ -171,6 +171,8 @@ for (let i = 0; i < document.getElementsByName('rate').length; i++) {
 
   });
 };
+
+// Make overlay for upload form
 const on = () => {
   document.getElementById('overlay').style.display = 'block';
 };
