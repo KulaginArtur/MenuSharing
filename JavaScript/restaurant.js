@@ -13,7 +13,11 @@ window.onclick = (e) => {
   }
 };
 
-const openCity = (evt, cityName) => {
+/*Katjan funktiot*/
+
+/*Navigation tabs - "Menu", "Reviews","Location"*/
+
+const openTab = (evt, tabName) => {
   let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName('tabcontent');
   for (i = 0; i < tabcontent.length; i++) {
@@ -23,9 +27,11 @@ const openCity = (evt, cityName) => {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(' active', '');
   }
-  document.getElementById(cityName).style.display = 'block';
+  document.getElementById(tabName).style.display = 'block';
   evt.currentTarget.className += ' active';
 };
+
+// by default we see content of tab "Menu"
 
 document.getElementById('defaultOpen').click();
 
@@ -36,23 +42,23 @@ const meal_mean = document.getElementsByClassName('meal-mean');
 for (let i = 0; i < meal_mean.length; i++) {
   meal_mean[i].style.display = 'none';
 }
-;
+
 const meal_app = document.getElementsByClassName('meal-app');
 for (let i = 0; i < meal_app.length; i++) {
   meal_app[i].style.display = 'none';
 }
-;
+
 const meal_des = document.getElementsByClassName('meal-des');
 for (let i = 0; i < meal_des.length; i++) {
   meal_des[i].style.display = 'none';
 }
-;
+
 
 const meal_drinks = document.getElementsByClassName('meal-drinks');
 for (let i = 0; i < meal_drinks.length; i++) {
   meal_drinks[i].style.display = 'none';
 }
-;
+
 
 //ends "hiding meals" block
 
@@ -82,9 +88,9 @@ mains.addEventListener('click', () => {
       document.getElementsByClassName('meal-mean')[i].style.display = 'none';
       span.innerText = '▷';
     }
-    ;
+
   }
-  ;
+
 });
 
 // "show meals" block for "Appetizers"
@@ -101,9 +107,9 @@ appetizers.addEventListener('click', () => {
       document.getElementsByClassName('meal-app')[i].style.display = 'none';
       span1.innerText = '▷';
     }
-    ;
+
   }
-  ;
+
 });
 
 // "show meals" block for "Desserts"
@@ -121,14 +127,14 @@ deserts.addEventListener('click', () => {
       document.getElementsByClassName('meal-des')[i].style.display = 'none';
       span2.innerText = '▷';
     }
-    ;
+
   }
-  ;
+
 });
 
 // "show meals" block for "Drinks"
 
-deserts.addEventListener('click', () => {
+drinks.addEventListener('click', () => {
 
   for (let i = 0; i <
   document.getElementsByClassName('meal-drinks').length; i++) {
@@ -141,10 +147,15 @@ deserts.addEventListener('click', () => {
       document.getElementsByClassName('meal-drinks')[i].style.display = 'none';
       span3.innerText = '▷';
     }
-    ;
+
   }
-  ;
+
 });
+
+
+
+/*Star rating: user rates the restaurant (how many stars: 1,2,3,4,5) and can see this number in the text field*/
+
 console.log(document.getElementsByName('rate').length);
 
 const rate = document.getElementsByName('rate');
@@ -155,7 +166,7 @@ for (let i = 0; i < document.getElementsByName('rate').length; i++) {
 
   document.getElementsByName('rate')[i].addEventListener('click', () => {
 
-    if (document.getElementsByName('rate')[i].checked == true) {
+    if (document.getElementsByName('rate')[i].checked === true) {
 
       const ratingValue = document.getElementsByName('rate')[i].value;
 
@@ -167,16 +178,18 @@ for (let i = 0; i < document.getElementsByName('rate').length; i++) {
           '2') {p.value = 2;} else {p.value = 1;}
 
     }
-    ;
+
 
   });
-};
+}
 
-// Make overlay for upload form
+// Show overlay of upload form
+
 const on = () => {
   document.getElementById('overlay').style.display = 'block';
 };
 
+// Hide overlay of upload form
 const off = () => {
   document.getElementById('overlay').style.display = 'none';
 };
